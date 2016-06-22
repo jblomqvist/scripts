@@ -53,3 +53,6 @@ sub debug {
 		note explain $message;
 	}
 }
+
+my $caller = (caller(1))[3];
+damp $caller;
